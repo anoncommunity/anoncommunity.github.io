@@ -1,0 +1,267 @@
+<div class='html-section flx dc js'>
+
+  <!--<region> *** separator *** -->
+  <div>
+    <div class='flx jc row-2'>
+      <img class='separator' src='assets/images/logo.png'>
+    </div>
+  </div>
+  <!--</region> ^^^ separator ^^^ -->
+
+  <!--<region> *** row - with infopanels *** -->
+  <div> <!-- required to stop flex container collisions -->
+
+    <!--<region> *** row flex container *** -->
+    <div class='flx ja ww row-2' style='flex-grow: 1;'>
+
+      <!--<region> *** last update *** -->
+      <div class='flx dc jc ac infopanel-wide font-normal'>
+        <div class='flx js ac'>
+          <i class="icon-clock"></i>
+          <p>last update</p>
+        </div>
+        <div class=''>
+          <p id='last_update_local' class='font-2'>
+            value
+          </p>
+        </div>
+        <div class='infobar_footer'>
+          <p id='last_update_utc'>
+            footer
+          </p>
+        </div>
+      </div>
+      <!--</region> ^^^ last update ^^^ -->
+
+      <!--<region> *** h and v dividers *** -->
+      <div class='flx jc ac small_screen_hide'>
+        <div class='vl light'></div>
+      </div>
+
+      <div class='small_screen_show display_none hl light'></div>
+      <!--</region> ^^^ h and v dividers ^^^ -->
+
+      <!--<region> *** active users *** -->
+      <div class='flx dc jc ac infopanel-wide font-normal'>
+        <div class='flx js ac'>
+          <i class="icon-user" style='opacity: 0.7;'></i>
+          <p>active users</p>
+        </div>
+        <div class=''>
+          <p id='active-users' class='font-2'>
+            value
+          </p>
+        </div>
+        <div class='infobar_footer'>
+          <p id='registered-users'>
+            footer
+          </p>
+        </div>
+      </div>
+      <!--</region> ^^^ active users ^^^ -->
+
+      <!--<region> *** h and v dividers *** -->
+      <div class='flx jc ac small_screen_hide'>
+        <div class='vl light'></div>
+      </div>
+
+      <div class='small_screen_show display_none hl light'></div>
+      <!--</region> ^^^ h and v dividers ^^^ -->
+
+      <!--<region> *** outbound queue *** -->
+      <div class='flx dc jc ac infopanel-wide font-normal'>
+        <div class='flx js ac'>
+          <i class='icon-mail' style='opacity: 0.7;'></i>
+          <p>outbound queue</p>
+        </div>
+        <div class=''>
+          <p id='outbound-queue-current' class='font-2'>
+            value
+          </p>
+        </div>
+        <div class='infobar_footer'>
+          <p id='outbound-queue-today'>
+            footer
+          </p>
+        </div>
+      </div>
+      <!--</region> ^^^ outbound queue ^^^ -->
+
+      <!--<region> *** h and v dividers *** -->
+      <div class='flx jc ac small_screen_hide'>
+        <div class='vl light'></div>
+      </div>
+
+      <div class='small_screen_show display_none hl light'></div>
+      <!--</region> ^^^ h and v dividers ^^^ -->
+
+      <!--<region> *** new calls *** -->
+      <div class='flx dc jc ac infopanel-wide font-normal'>
+        <div class='flx js ac'>
+          <i class='icon-user' style='opacity: 0.7;'></i>
+          <p>new calls</p>
+        </div>
+        <div class=''>
+          <p id='new-calls-today' class='font-2'>
+            value
+          </p>
+        </div>
+        <div class='infobar_footer'>
+          <p id='new-calls-week'>
+            footer
+          </p>
+        </div>
+      </div>
+      <!--</region> ^^^ new calls ^^^ -->
+
+      <!--<region> *** h and v dividers *** -->
+      <div class='flx jc ac small_screen_hide'>
+        <div class='vl light'></div>
+      </div>
+
+      <div class='small_screen_show display_none hl light'></div>
+      <!--</region> ^^^ h and v dividers ^^^ -->
+
+      <!--<region> *** survey response *** -->
+      <div class='flx dc jc ac infopanel-wide font-normal'>
+        <div class='flx js ac'>
+          <i class='icon-user' style='opacity: 0.7;'></i>
+          <p>survey response</p>
+        </div>
+        <div class=''>
+          <p id='survey-response-recent' class='font-2'>
+            value
+          </p>
+        </div>
+        <div class='infobar_footer'>
+          <p id='survey-response-week'>
+            footer
+          </p>
+        </div>
+      </div>
+      <!--</region> ^^^ survey response ^^^ -->
+
+
+    </div>
+    <!--</region> ^^^ row flex container ^^^ -->
+
+  </div>
+  <!--</region> ^^^ row - with infopanels ^^^ -->
+
+
+  <!--<region> *** row - chart and chart tooltips *** -->
+  <div> <!-- required to stop flex container collisions -->
+
+    <!--<region> *** row flex container *** -->
+    <div class='flx ja ww row-1' style='flex-grow: 1;'>
+
+      <!--<region> *** column *** -->
+      <div class='flx dc js ac infopanel-wide'>
+
+        <!--<region> *** daily stats heading *** -->
+        <div class='flx js ac'>
+          <i class='icon-mail main-font-dark'></i>
+          <p>queued mail</p>
+        </div>
+        <!--</region> ^^^ daily stats heading ^^^ -->
+
+        <div id='chart_div' class='chart_end' style='width:100%;flex-grow:1'></div>
+
+      </div>
+      <!--</region> *** column *** -->
+
+      <!--<region> *** column *** -->
+      <div class='flx dc jc ac infopanel-wide' style='width: 200px;flex-grow:0;'>
+
+        <!--<region> *** daily stats heading *** -->
+        <div class='flx js ac'>
+          <i class='icon-chart-line main-font-dark'></i>
+          <p>daily stats</p>
+        </div>
+        <!--</region> ^^^ daily stats heading ^^^ -->
+
+        <!--<region> *** daily stats subheading *** -->
+        <div class='flx dc ja ac' style='padding-top: 0.5rem;'>
+          <div class='flx js'>
+            <div style='font-size: 0.8rem;'>(hover over candle for detail)</div>
+          </div>
+        </div>
+        <!--</region> ^^^ daily stats subheading ^^^ -->
+
+        <!--<region> *** info panel values *** -->
+        <div class='flx dc jb' style='width: 200px;flex-grow:0;'>
+
+          <!--<region> *** h and v dividers *** -->
+          <div class='flx jc' style='padding: 0 2rem;'>
+            <div id='date' class='daily-stats-value'></div>
+          </div><br>
+          <!--</region> ^^^ h and v dividers ^^^ -->
+
+          <!--<region> *** open *** -->
+          <div class='flx jb' style='padding: 0 2rem;'>
+            <div>open :</div>
+            <div id='open' class='daily-stats-value'></div>
+          </div>
+          <!--</region> ^^^ open ^^^ -->
+
+          <!--<region> *** close *** -->
+          <div class='flx jb' style='padding: 0 2rem;'>
+            <div>close :</div>
+            <div id='close' class='daily-stats-value'></div>
+          </div>
+          <!--</region> ^^^ close ^^^ -->
+
+          <!--<region> *** high *** -->
+          <div class='flx jb' style='padding: 0 2rem;'>
+            <div>high :</div>
+            <div id='high' class='daily-stats-value'></div>
+          </div>
+          <!--</region> ^^^ high ^^^ -->
+
+          <!--<region> *** low *** -->
+          <div class='flx jb' style='padding: 0 2rem;'>
+            <div>low :</div>
+            <div id='low' class='daily-stats-value'></div>
+          </div>
+          <!--</region> ^^^ low ^^^ -->
+
+        </div>
+        <!--</region> ^^^ info panel values ^^^ -->
+
+      </div>
+      <!--</region> *** column *** -->
+
+    </div>
+    <!--</region> ^^^ row flex container ^^^ -->
+
+  </div>
+  <!--</region> ^^^ row - chart and chart tooltips ^^^ -->
+
+  <!--<region> *** separator *** -->
+  <div>
+    <div class='flx jc row-2'>
+      <img class='separator' src='assets/images/logo.png'>
+    </div>
+  </div>
+  <!--</region> ^^^ separator ^^^ -->
+
+</div>
+
+<!--<region> *** script *** -->
+<script>
+  // run this after section is loaded
+  // this ensures all elements are available to js
+  // needs to be done this way to ensure it only loads once
+  // otherwise it'll run multiple instances of SetInterval
+  if (typeof infoSectionLoad == 'function')
+  {
+    infoSectionLoad();
+  }
+  else
+  {
+    // use this to flag to js that
+    // function needs to run after load
+    islJsNotLoaded = true;
+  }
+</script>
+<!--</region> ^^^ script ^^^ -->

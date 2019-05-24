@@ -1,1 +1,151 @@
-hello
+<!DOCTYPE HTML>
+<!--
+    Copyright (c) 2018 Iain Lawrie, all rights reserved
+    See LICENSE file for more info
+-->
+
+<html>
+
+  <!--<region> *** <head> *** -->
+  <head>
+    <title>Web Framework</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/win_main.css" />
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" href="assets/fonts/css/anon.css">
+    <!-- <link rel="stylesheet" href="assets/fonts/css/animation.css"> -->
+  </head>
+  <!--</region> *** <head> *** -->
+
+  <!--<region> *** body *** -->
+  <body class='flx dc js is-top-menu-visible'>
+
+    <!--<region> *** body div *** -->
+    <div class='flx dc js highlight' style='flex-grow: 1;'>
+
+      <!--<region> *** header *** -->
+      <!--</region> ^^^ header ^^^ -->
+
+      <!--<region> *** top sliding menu *** -->
+      <div id='top-menu'>
+        <header class='titlebar flx ja ac header-bar' style='-webkit-tap-highlight-color: rgba(0,0,0,0); user-select: none;'>
+
+          <!--<region> *** left group *** -->
+          <!-- <div class='flx jb ac header-left-group'>
+            <img id='app-icon' src=assets/images/pngInfo_24.png  draggable='false' style='object-fit:contain;margin-left:1rem;'>
+            <span class='drag-handle header-left-title' style='margin: 0 1rem;'>Splash Window Title</span>
+          </div> -->
+          <!--</region> ^^^ left group ^^^ -->
+
+          <!--<region> *** menu button *** -->
+          <i id='btn-menu' class='icon-menu btn-menu-normal font-2-5'></i>
+          <!--</region> *** menu button *** -->
+
+          <!--<region> *** pin button *** -->
+          <i id='btn-pin' class='icon-pin btn-pin-normal font-2-5'></i>
+          <!--</region> ^^^ pin button ^^^ -->
+
+          <!--<region> *** feedback button *** -->
+          <!-- <i id='feedback-section' class='icon-users btn-pin-normal font-2-5 btn-click'></i> -->
+          <!--</region> ^^^ feedback button ^^^ -->
+
+          <!--<region> *** theme button *** -->
+          <i id='btn-theme' class='icon-desktop btn-pin-normal font-2-5'></i>
+          <!--</region> ^^^ theme button ^^^ -->
+
+          <!--<region> *** theme button *** -->
+          <i id='btn-settings-section' class='icon-cog btn-pin-normal font-2-5 btn-click'></i>
+          <!--</region> ^^^ theme button ^^^ -->
+
+          <!--<region> *** centre group *** -->
+          <!-- <div class='drag-handle' style='flex-grow: 1;'>&nbsp;</div> -->
+
+          <!-- <div class='drag-handle flx jc ac' style='flex-grow: 1;'> -->
+            <!-- <div class='flx jc ac drag-handle' style='flex-grow: 1;'></div> -->
+            <!-- <div class='flx jc ac header-centre-group'>
+              <img id='app-icon' src=assets/images/logo-line.png  draggable='false' style='height:32px;object-fit:contain;'> -->
+              <!-- <span class='drag-handle header-left-title' style='margin: 0 1rem;'>Splash Window Title</span> -->
+              <!-- <div class='flx jc ac drag-handle' style='flex-grow: 1;'></div> -->
+            <!-- </div> -->
+
+          <!-- </div> -->
+
+          <!--</region> ^^^ centre group ^^^ -->
+
+          <!--<region> *** right group *** -->
+          <!-- <div class='flx je' style='margin-right: 0.5rem;'> -->
+          <!-- <div class='flx' style='width:100px'></div> -->
+
+            <!--<region> *** minimise button *** -->
+            <!-- <div id='btn-min' class='window-min sys-button app-btn flx ac jc'>
+              <img id='app-min' src=assets/images/min.png  draggable='false'>
+            </div> -->
+            <!--</region> ^^^ minimise button ^^^ -->
+
+            <!--<region> *** maximise button *** -->
+            <!-- <div id='btn-max' class='window-max app-btn flx ac jc'>
+              <img id='img-max' src=assets/images/max.png  draggable='false'>
+            </div> -->
+            <!--</region> ^^^ maximise button ^^^ -->
+
+            <!--<region> *** close app button *** -->
+            <!-- <div class='window-close app-btn flx ac jc'>
+              <img id='app-close' src=assets/images/close2.png  draggable='false'>
+            </div> -->
+            <!--</region> ^^^ close app button ^^^ -->
+
+          <!-- </div> -->
+          <!--</region> ^^^ right group ^^^ -->
+
+        </header>
+      </div>
+      <!--</region> ^^^ top sliding menu ^^^ -->
+
+
+      <!--<region> *** lhs sliding menu *** -->
+      <div id='menu'></div>
+      <!--</region> ^^^ lhs sliding menu ^^^ -->
+
+      <!--<region> *** horizontal divider *** -->
+      <!-- <div class='flx ja ac'>
+        <div class='hl' style='width: 80%; '></div>
+      </div> -->
+      <!--</region> ^^^ horizontal divider ^^^ -->
+
+      <!--<region> *** main div *** -->
+      <div id='main-div' style='display:flex;flex-grow:1;  border-radius: 10px;' >
+        <div class='frame flx'>
+        </div>
+      </div>
+      <!--</region> ^^^ main div ^^^ -->
+
+    </div>
+    <!--</region> ^^^ body div ^^^ -->
+
+  </body>
+  <!--</region> ^^^ body div ^^^ -->
+
+  <!--<region> *** script tags *** -->
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script>if (window.module) module = window.module;</script>
+
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/jquery.collapsible.min.js"></script>
+
+  <!-- <script src='//cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js'></script> -->
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/maphilight.min.js"></script>
+  <!--</region> ^^^ script tags ^^^ -->
+
+</html>

@@ -173,19 +173,19 @@ function toggleTopbar () {
 
 // return from dialog - params identifies the dialog
 // this fires only when the 'ok'/'yes' button is selected
-ipcRenderer.on('dialog_ok', function (event, params) {
-  console.log(params)
-  switch (params) {
-    case 'Alert': {
-      console.log('alert clicked')
-      break
-    }
-    case 'Confirm': {
-      console.log('confirm clicked')
-      break
-    }
-  }
-})
+// ipcRenderer.on('dialog_ok', function (event, params) {
+//   console.log(params)
+//   switch (params) {
+//     case 'Alert': {
+//       console.log('alert clicked')
+//       break
+//     }
+//     case 'Confirm': {
+//       console.log('confirm clicked')
+//       break
+//     }
+//   }
+// })
 
 $('#btn_send_reset').click(() => {
   // var alertDialog = new openDialog('Alert', 'Wallet has been backed up').alert()

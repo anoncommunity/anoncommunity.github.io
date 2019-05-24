@@ -23,17 +23,15 @@ $(function () {
 })
 
 
-$('.expandable').click(function () {
-  let rotate = $('#' + this.id + '-open').hasClass('rotated')
-  $('.expander-icon').removeClass('rotated')
-  if (!rotate) $('#' + this.id + '-open').addClass('rotated')
+$('#form-section').click(function () {
+  $('#right-open').toggleClass('rotated')
 })
 
 $('.menurow,.btn-click').click(function () {
   console.log(this.id)
   if (!$('#' + this.id).hasClass('indent'))
   {
-    $('.expander-icon').removeClass('rotated')
+    $('#right-open').removeClass('rotated')
   }
   $('.menurow').removeClass('active')
   $('#' + this.id).addClass('active')

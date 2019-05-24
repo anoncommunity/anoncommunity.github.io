@@ -21,30 +21,3 @@ $(function () {
     animate: true
   })
 })
-
-
-$('.expandable').click(function () {
-  let rotate = $('#' + this.id + '-open').hasClass('rotated')
-  $('.expander-icon').removeClass('rotated')
-  if (!rotate) $('#' + this.id + '-open').addClass('rotated')
-})
-
-$('.menurow,.btn-click').click(function () {
-  console.log(this.id)
-  if (!$('#' + this.id).hasClass('indent'))
-  {
-    $('.expander-icon').removeClass('rotated')
-  }
-  $('.menurow').removeClass('active')
-  $('#' + this.id).addClass('active')
-
-  frameChange('sections/' + this.id + '.html')
-
-  // make sure it only loads the script once
-  // otherwise multiple setIntervals could occur, for example
-  if (loaded.indexOf(this.id) === -1) {
-    loaded += this.id
-
-    $.getScript('assets/js/modules/' + this.id + '.js')
-  }
-})

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+    Copyright (c) 2018 Iain Lawrie, all rights reserved
+    See LICENSE file for more info
+-->
+
+<html>
+  <head>
+    <title>ZiCE Select Recipient</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+
+<body style='border: 3px solid rgba(0, 0, 0, 0.3); color: rgba(255, 255, 255, 0.7);'>
+<div class='highlight' style='height:100vh;'>
+  <!-- Header -->
+  <header class='titlebar flx jb' style='color: #444444;'>
+
+    <!-- *** left group *** -->
+    <div class='infopanelheading'>
+      <img src=assets/images/pngInfo_24.png style='margin-left:1rem;'>
+      <span>ZiCE Select Recipient</span>
+    </div>
+    <!-- ^^^ left group ^^^ -->
+
+    <!-- *** centre group *** -->
+    <div id='drag-handle'></div>
+    <!-- ^^^ centre group ^^^ -->
+
+    <!-- *** right group *** -->
+    <div class='flx je'>
+      <div class='window-close titlebutton flx jc ac'>
+        <!-- <i class="icon-cancel-7"></i> -->
+        <img src='assets/images/flat_close.png' class='btn_image'>
+      </div>
+    </div>
+    <!-- ^^^ right group ^^^ -->
+
+  </header>
+  <!-- ^^^ header ^^^ -->
+
+  <!-- *** main div *** -->
+  <div class='flx dc js' style='background-color:rgba(255, 255, 255, 0.7); margin: 1rem; padding: 1rem; height: 100%;'>
+    <div class='flx jb ac font-1-5'>
+      <div style='color: rgba(0, 0, 0, 0.7);'>
+        Your accounts
+      </div>
+    </div>
+    <div id='account-list'></div>
+    <div class='flx jb ac font-1-5'>
+      <div style='color: rgba(0, 0, 0, 0.7);'>
+        Your recipients
+      </div>
+    </div>
+    <div id='recipient-list'></div>
+    <!-- *** dialog header *** -->
+  </div>
+  <!-- ^^^ main div ^^^ -->
+
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="assets/js/jquery.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/select-recipient.js"></script>
+
+</div>
+</body>
+</html>

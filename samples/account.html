@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+    Copyright (c) 2018 Iain Lawrie, all rights reserved
+    See LICENSE file for more info
+-->
+
+<html>
+  <head>
+    <title>ZiCE Account Creation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css"> -->
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/request.css" />
+  </head>
+
+<body style='border: 3px solid rgba(0, 0, 0, 0.3); color: rgba(255, 255, 255, 0.7);'>
+
+  <!-- Header -->
+  <header class='titlebar flx jb' style='color: #444444;'>
+
+    <!-- *** left group *** -->
+    <div class='infopanelheading'>
+      <img src=assets/images/pngInfo_24.png style='margin-left:1rem;'>
+      <span>ZiCE Account Creation</span>
+    </div>
+    <!-- ^^^ left group ^^^ -->
+
+    <!-- *** centre group *** -->
+    <div id='drag-handle'></div>
+    <!-- ^^^ centre group ^^^ -->
+
+    <!-- *** right group *** -->
+    <div class='flx je'>
+      <div class='window-close titlebutton flx jc ac'>
+        <!-- <i class="icon-cancel-7"></i> -->
+        <img src='assets/images/flat_close.png' class='btn_image'>
+      </div>
+    </div>
+    <!-- ^^^ right group ^^^ -->
+
+  </header>
+  <!-- ^^^ header ^^^ -->
+
+  <!-- *** main div *** -->
+  <div class='flx dc jb' style='padding: 1rem; height: 100%;'>
+
+    <!-- *** dialog header *** -->
+    <div>
+      <div id='dialog_title' class='overview_header_light'>CONFIRM</div>
+      <div class='overview_header' style='color: #CC0000;'>ZiCE</div>
+    </div>
+    <!-- ^^^ dialog header ^^^ -->
+
+    <div class='flx js' style='flex-grow: 1; margin: 1rem;'>
+
+      <div style='margin-top: 0.5rem; margin-right: 1rem;'>
+        <img src='assets/images/pngInfo_32.png'>
+      </div>
+
+      <div class='flx dc jb' style='margin-top: 1rem; flex-grow: 1;'>
+
+        <div id='confirm_question'></div>
+
+        <div class='flx je'>
+
+          <!-- *** ok button *** -->
+          <div id='btn_dialog_ok' class='flx dc jc btn btn_send'>
+            <div class='btn_content flx js'>
+              <div class='flx dc jc'>
+                <img style='margin-right: 10px;' src='assets/images/red.png'>
+              </div>
+
+              <div class='flx dc jc'>
+                <div class='wallet_title_font'>
+                  create account
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ^^^ ok button ^^^ -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ^^^ main div ^^^ -->
+
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="assets/js/jquery.min.js"></script>
+<script>if (window.module) module = window.module;</script>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/account.js"></script>
+
+
+</body>
+</html>

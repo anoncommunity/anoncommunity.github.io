@@ -1,0 +1,159 @@
+<div class='html-section flx dc js'>
+
+  <!--<region> *** separator *** -->
+  <div>
+    <div class='flx jc row-1'>
+      <img class='separator' src='assets/images/logo.png'>
+    </div>
+  </div>
+  <!--</region> ^^^ separator ^^^ -->
+
+  <!--<region> *** row - 1 *** -->
+  <div> <!-- required to stop flex container collisions -->
+
+    <!--<region> *** container - row - 1 *** -->
+    <div class='flx as clear-height row-1'>
+
+      <!--<region> *** container - row - 1 *** -->
+      <div class='flx100h dc ja as'>
+
+        <!--<region> *** info panel *** -->
+        <div class='flx100w dc ja ac'>
+
+          <div class='font-2'>
+            <p id='id-value1'>WALLET - BACKUP</p>
+          </div>
+
+          <div class='' style=''>
+            <p>
+              We shouldn't really have to stress the importance of backup when
+              it comes to something as important as crypto wallets - but you
+              <b>MUST</b> back up your wallet.dat file and export your keys to
+              a secure envronment. Remember it's your investment - so invest a
+              little time to ensure it's secure.
+            </p>
+
+            <p>
+              We've made this a simple procedure but it's down to you to make
+              sure that everything goes as planned - so not only do you backup
+              as directed, you also <b>MUST</b> ensure that you can read the
+              exported keys. And we advise at least two separate backup
+              locations which should be chosen so that it's extremely unlikely
+              that both sets of backups could be destroyed at any one time.
+            </p>
+          </div>
+
+        </div>
+        <!--</region> ^^^ info panel ^^^ -->
+
+        <hr style="border:0.5px solid rgba(0, 0, 0, 0.2); margin: 1rem auto; width: 20%;">
+
+        <!--<region> *** 3-columns *** -->
+        <div class='flx100w ja ww'>
+
+          <div class='flx dc js ac infopanel-wide'>
+
+            <!--<region> *** export dir button *** -->
+            <div style='background-color: rgba(56, 68, 79, 1);width: 100%;'>
+              <div id='btn-exportdir' class='flx jc ac btn-style'>
+                <i class="icon-folder-open"></i>
+                <span>export dir</span>
+              </div>
+            </div>
+            <!--</region> ^^^ export dir button ^^^ -->
+
+            <p id='backup_exportdir' style='font-family: sans-serif;font-size: 1rem; margin-bottom: 0;'>
+               not currently set
+            </p>
+            <!-- <div id='exportdir-graphic'>
+            </div> -->
+
+            <hr style="border-top:1px solid rgba(0, 0, 0, 0.3); border-bottom: 0px; margin-top: 1rem; width: 50%;">
+
+
+             <p style='margin-top: 0;'>
+                For the backup and export functions to work correctly
+                the exportdir option needs to be set in the zice.conf file
+             </p>
+
+             <p>
+                This is most easily achieved by selecting the 'export dir'
+                button above and simply browsing to a directory. The current
+                setting is
+             </p>
+
+          </div>
+
+          <div class='flx dc js ac infopanel-wide'>
+
+            <!--<region> *** backup button *** -->
+            <div style='background-color: rgba(56, 68, 79, 1);width: 100%;'>
+              <div id='btn-backup' class='flx jc ac btn-style'>
+                <i class="icon-database"></i>
+                <span>backup</span>
+              </div>
+            </div>
+            <!--</region> ^^^ backup button ^^^ -->
+
+            <hr style="border-top:1px solid rgba(0, 0, 0, 0.3); border-bottom: 0px; margin-top: 1rem; width: 50%;">
+
+            <p style='margin-top: 0;'>
+              To backup your wallet to a file ensure that the exportdir
+              option is set in the zice.conf file (see 'export directory'
+              previously)
+            </p>
+
+            <p>
+              Once that's complete simply press the 'backup' button above and
+              this should make up a backup of your wallet to the export directory
+              configured under the export dir section
+            </p>
+
+          </div>
+
+          <div class='flx dc js ac infopanel-wide'>
+
+            <!--<region> *** export keys button *** -->
+            <div style='background-color: rgba(56, 68, 79, 1);width: 100%;'>
+              <div id='btn-export' class='flx jc ac btn-style'>
+                <i class="icon-key"></i>
+                <span>export keys</span>
+              </div>
+            </div>
+            <!--</region> ^^^ export keys button ^^^ -->
+
+            <hr style="border-top:1px solid rgba(0, 0, 0, 0.3); border-bottom: 0px; margin-top: 1rem; width: 50%;">
+
+            <p style='margin-top: 0;'>
+              To backup your private keys to a file ensure that the exportdir
+              option is set in the zice.conf file (see 'export directory'
+              previously)
+            </p>
+
+            <p>
+              Once that's complete simply press the 'export keys' button above and
+              this should export your private keys to the export directory
+              configured under the export dir section
+            </p>
+
+          </div>
+
+        </div>
+        <!--</region> ^^^ 3-columns ^^^ -->
+
+      </div>
+      <!--</region> ^^^ container - row - 1 ^^^ -->
+
+    </div>
+    <!--</region> ^^^ container - row - 1 ^^^ -->
+
+  </div>
+  <!--</region> ^^^ row - 1 ^^^ -->
+
+</div>
+
+<!--<region> *** script *** -->
+<script>
+    backupSectionLoad();
+</script>
+<!--</region> ^^^ script ^^^ -->

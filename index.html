@@ -8,7 +8,7 @@
 
   <!--<region> *** <head> *** -->
   <head>
-    <title>Web Framework</title>
+    <title>SEPA Info</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="" />
@@ -17,23 +17,20 @@
     <link rel="stylesheet" href="assets/css/app.css" />
     <link rel="stylesheet" href="assets/css/win_main.css" />
     <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-    <link rel="stylesheet" href="assets/fonts/css/anon.css">
+    <link rel="stylesheet" href="assets/fonts/css/zclassic.css">
     <!-- <link rel="stylesheet" href="assets/fonts/css/animation.css"> -->
   </head>
   <!--</region> *** <head> *** -->
 
   <!--<region> *** body *** -->
-  <body class='flx dc js is-top-menu-visible'>
+  <body class='flx dc js'>
 
     <!--<region> *** body div *** -->
     <div class='flx dc js highlight' style='flex-grow: 1;'>
 
       <!--<region> *** header *** -->
-      <!--</region> ^^^ header ^^^ -->
-
-      <!--<region> *** top sliding menu *** -->
-      <div id='top-menu'>
-        <header class='titlebar flx ja ac header-bar' style='-webkit-tap-highlight-color: rgba(0,0,0,0); user-select: none;'>
+      <div>
+        <header class='titlebar flx jb ac header-bar' style='height: 40px;'>
 
           <!--<region> *** left group *** -->
           <!-- <div class='flx jb ac header-left-group'>
@@ -43,43 +40,35 @@
           <!--</region> ^^^ left group ^^^ -->
 
           <!--<region> *** menu button *** -->
+          <!-- <div id='btn-menu' class='btn-menu-normal sys-button app-btn flx ac jc'>
+          </div> -->
           <i id='btn-menu' class='icon-menu btn-menu-normal font-2-5'></i>
           <!--</region> *** menu button *** -->
 
           <!--<region> *** pin button *** -->
+          <!-- <div id='btn-pin' class='btn-pin-normal sys-button app-btn flx ac jc'>
+          </div> -->
           <i id='btn-pin' class='icon-pin btn-pin-normal font-2-5'></i>
           <!--</region> ^^^ pin button ^^^ -->
-
-          <!--<region> *** feedback button *** -->
-          <!-- <i id='feedback-section' class='icon-users btn-pin-normal font-2-5 btn-click'></i> -->
-          <!--</region> ^^^ feedback button ^^^ -->
-
-          <!--<region> *** theme button *** -->
-          <i id='btn-theme' class='icon-desktop btn-pin-normal font-2-5'></i>
-          <!--</region> ^^^ theme button ^^^ -->
-
-          <!--<region> *** theme button *** -->
-          <i id='btn-settings-section' class='icon-cog btn-pin-normal font-2-5 btn-click'></i>
-          <!--</region> ^^^ theme button ^^^ -->
 
           <!--<region> *** centre group *** -->
           <!-- <div class='drag-handle' style='flex-grow: 1;'>&nbsp;</div> -->
 
-          <!-- <div class='drag-handle flx jc ac' style='flex-grow: 1;'> -->
+          <div class='drag-handle flx jc ac' style='flex-grow: 1;'>
             <!-- <div class='flx jc ac drag-handle' style='flex-grow: 1;'></div> -->
-            <!-- <div class='flx jc ac header-centre-group'>
-              <img id='app-icon' src=assets/images/logo-line.png  draggable='false' style='height:32px;object-fit:contain;'> -->
+            <div class='flx jc ac header-centre-group'>
+              <img id='app-icon' src=assets/images/logo-line.png  draggable='false' style='height:32px;object-fit:contain;'>
               <!-- <span class='drag-handle header-left-title' style='margin: 0 1rem;'>Splash Window Title</span> -->
               <!-- <div class='flx jc ac drag-handle' style='flex-grow: 1;'></div> -->
-            <!-- </div> -->
+            </div>
 
-          <!-- </div> -->
+          </div>
 
           <!--</region> ^^^ centre group ^^^ -->
 
           <!--<region> *** right group *** -->
           <!-- <div class='flx je' style='margin-right: 0.5rem;'> -->
-          <!-- <div class='flx' style='width:100px'></div> -->
+          <div class='flx' style='width:100px'></div>
 
             <!--<region> *** minimise button *** -->
             <!-- <div id='btn-min' class='window-min sys-button app-btn flx ac jc'>
@@ -104,8 +93,7 @@
 
         </header>
       </div>
-      <!--</region> ^^^ top sliding menu ^^^ -->
-
+      <!--</region> ^^^ header ^^^ -->
 
       <!--<region> *** lhs sliding menu *** -->
       <div id='menu'></div>
@@ -145,7 +133,6 @@
   <script src="assets/js/app.js"></script>
   <script src="assets/js/utils.js"></script>
   <script src="assets/js/index.js"></script>
-  <script src="assets/js/maphilight.min.js"></script>
   <!--</region> ^^^ script tags ^^^ -->
 
 </html>

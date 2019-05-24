@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'zclassic';
-  src: url('../font/zclassic.eot?81717021');
-  src: url('../font/zclassic.eot?81717021#iefix') format('embedded-opentype'),
-       url('../font/zclassic.woff2?81717021') format('woff2'),
-       url('../font/zclassic.woff?81717021') format('woff'),
-       url('../font/zclassic.ttf?81717021') format('truetype'),
-       url('../font/zclassic.svg?81717021#zclassic') format('svg');
+  src: url('../font/zclassic.eot?1008463');
+  src: url('../font/zclassic.eot?1008463#iefix') format('embedded-opentype'),
+       url('../font/zclassic.woff2?1008463') format('woff2'),
+       url('../font/zclassic.woff?1008463') format('woff'),
+       url('../font/zclassic.ttf?1008463') format('truetype'),
+       url('../font/zclassic.svg?1008463#zclassic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'zclassic';
-    src: url('../font/zclassic.svg?81717021#zclassic') format('svg');
+    src: url('../font/zclassic.svg?1008463#zclassic') format('svg');
   }
 }
 */
@@ -103,7 +103,18 @@
 .icon-help-circled-1:before { content: '\e82d'; } /* '' */
 .icon-help-1:before { content: '\e82e'; } /* '' */
 .icon-help-2:before { content: '\e82f'; } /* '' */
+.icon-right-open-2:before { content: '\e830'; } /* '' */
+.icon-play-circled:before { content: '\e831'; } /* '' */
+.icon-right-open:before { content: '\e832'; } /* '' */
+.icon-play-circled2:before { content: '\e833'; } /* '' */
+.icon-play-1:before { content: '\e834'; } /* '' */
+.icon-right-open-3:before { content: '\e835'; } /* '' */
+.icon-right-circle:before { content: '\e836'; } /* '' */
+.icon-play-2:before { content: '\e837'; } /* '' */
+.icon-play-circled2-1:before { content: '\e838'; } /* '' */
+.icon-right-open-1:before { content: '\f006'; } /* '' */
 .icon-menu-1:before { content: '\f008'; } /* '' */
+.icon-play:before { content: '\f00f'; } /* '' */
 .icon-paper-plane-3:before { content: '\f01d'; } /* '' */
 .icon-users-2:before { content: '\f064'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
@@ -114,6 +125,7 @@
 .icon-desktop:before { content: '\f108'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
 .icon-calendar-empty:before { content: '\f133'; } /* '' */
+.icon-play-circled-1:before { content: '\f144'; } /* '' */
 .icon-euro:before { content: '\f153'; } /* '' */
 .icon-pound:before { content: '\f154'; } /* '' */
 .icon-dollar:before { content: '\f155'; } /* '' */

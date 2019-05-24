@@ -1,0 +1,404 @@
+<div class='html-section flx dc js'>
+
+  <!--<region> *** column/row *** -->
+  <div class='flx fg'> <!-- required to stop flex container collisions -->
+
+    <!--<region> *** row flex container *** -->
+    <div class='flx ja fg ww column-1'>
+
+      <!-- <div class='infopanel-wide' style='width:200px;background-color: antiquewhite; color: #333;'> -->
+
+        <!--<region> *** lhs column *** -->
+        <div class='flx dc ac infopanel-wide' style='min-width:250px;background-color:rgba(0, 0, 0, 0.3);'>
+
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ja ac infopanel-wide font-normal'>
+
+              <div class='flx jc ac'>
+                <p>sepa-app-</p>
+              </div>
+
+              <p id='xactive-users' class='font-2'>
+                nhd01
+              </p>
+
+              <p id='last_update_utc'>
+                (nethelpdesk)
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl light'></div>
+            </div>
+
+            <div class='small_screen_show hl light'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ja ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <p class='font-2'>data collector</p>
+              </div>
+
+              <p id='last_update_local'>
+                data is current
+              </p>
+
+              <img src='assets/images/ledGreen64.png'>
+
+              <p id='last_update_utc'>
+                last check
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl light'></div>
+            </div>
+
+            <div class='small_screen_show hl light'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ja ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <p class='font-2'>running tasks</p>
+              </div>
+
+              <p id='last_update_local'>
+                no issues reported
+              </p>
+
+              <img src='assets/images/ledGreen64.png'>
+
+              <p id='last_update_utc'>
+                last check
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl light'></div>
+            </div>
+
+            <div class='small_screen_show hl light'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ja ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <p class='font-2'>network</p>
+              </div>
+
+              <p id='last_update_local'>
+                connection quality
+              </p>
+
+              <img src='assets/images/ledRed64.png'>
+
+              <p id='last_update_utc'>
+                last check
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+
+
+        </div>
+        <!--</region> *** lhs column *** -->
+
+      <!-- </div> -->
+
+      <div class='flx dc jb' style=' flex-grow: 100;'>
+
+        <!--<region> *** everything else *** -->
+        <div class='flx as infopanel-wide' style='flex-grow: 0;margin-bottom: 10px;'>
+
+          <!--<region> *** row flex container *** -->
+          <div class='flx ja fg ww row-1'>
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-users"></i>
+                <p>active users</p>
+              </div>
+
+              <p id='active-users' class='font-2'>
+                value
+              </p>
+
+              <p>
+                Registered users <span id='registered-users'></span>
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl'></div>
+            </div>
+
+            <div class='small_screen_show display_none hl'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-email"></i>
+                <p>outbound queue</p>
+              </div>
+
+              <p id='outbound-queue' class='font-2'>
+                value
+              </p>
+
+              <p>
+                Today's tally <span id='outbound-day'></span>
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl'></div>
+            </div>
+
+            <div class='small_screen_show display_none hl'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-help-1"></i>
+                <p>new calls</p>
+              </div>
+
+              <p id='new-calls' class='font-2'>
+                value
+              </p>
+
+              <p id='new-calls-day'>
+                footer
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl'></div>
+            </div>
+
+            <div class='small_screen_show display_none hl'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-chart-pie"></i>
+                <p>latest survey</p>
+              </div>
+
+              <p id='survey-recent' class='font-2'>
+                value
+              </p>
+
+              <p id='survey-week'>
+                footer
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl'></div>
+            </div>
+
+            <div class='small_screen_show display_none hl'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** db size *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-database"></i>
+                <p>database size</p>
+              </div>
+
+              <p id='database-size' class='font-2'>
+                value
+              </p>
+
+              <p id='database-status'>
+                footer
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+          </div>
+          <!--</region> ^^^ row flex container ^^^ -->
+
+        </div>
+        <!--</region> ^^^ everything else ^^^ -->
+
+        <!--<region> *** everything else *** -->
+        <div class='flx as infopanel-wide' style='background-color: #fff; color: #333;flex-grow: 0;'>
+
+          <!--<region> *** row flex container *** -->
+          <div class='flx ja fg ww row-2'>
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-users"></i>
+                <p>active users</p>
+              </div>
+
+              <p id='last_update_local' class='font-2'>
+                value
+              </p>
+
+              <p id='last_update_utc'>
+                footer
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl light'></div>
+            </div>
+
+            <div class='small_screen_show display_none hl light'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-users"></i>
+                <p>active users</p>
+              </div>
+
+              <p id='last_update_local' class='font-2'>
+                value
+              </p>
+
+              <p id='last_update_utc'>
+                footer
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl light'></div>
+            </div>
+
+            <div class='small_screen_show display_none hl light'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-users"></i>
+                <p>active users</p>
+              </div>
+
+              <p id='last_update_local' class='font-2'>
+                value
+              </p>
+
+              <p id='last_update_utc'>
+                footer
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+            <!--<region> *** h and v dividers *** -->
+            <div class='flx jc ac small_screen_hide'>
+              <div class='vl light'></div>
+            </div>
+
+            <div class='small_screen_show display_none hl light'></div>
+            <!--</region> ^^^ h and v dividers ^^^ -->
+
+            <!--<region> *** last update *** -->
+            <div class='flx dc ac infopanel-wide font-normal'>
+
+              <div class='flx js ac'>
+                <i class="icon-users"></i>
+                <p>active users</p>
+              </div>
+
+              <p id='last_update_local' class='font-2'>
+                value
+              </p>
+
+              <p id='last_update_utc'>
+                footer
+              </p>
+
+            </div>
+            <!--</region> ^^^ last update ^^^ -->
+
+          </div>
+          <!--</region> ^^^ row flex container ^^^ -->
+
+        </div>
+        <!--</region> ^^^ everything else ^^^ -->
+
+      </div>
+
+    </div>
+    <!--</region> ^^^ row flex container ^^^ -->
+
+  </div>
+  <!--</region> ^^^ column/row ^^^ -->
+
+  <!--<region> *** separator *** -->
+  <!-- <div id='btn-topbar'>
+    <div class='flx jc row-1'>
+      <img class='separator' src='assets/images/logo.png'>
+    </div>
+  </div> -->
+  <!--</region> ^^^ separator ^^^ -->
+
+</div>
+
+
+<!--<region> *** script *** -->
+<script>
+  // run this after section is loaded
+  // this ensures all elements are available to js
+  if (typeof indexSectionLoad == 'function') {
+    indexSectionLoad();
+  }
+</script>
+<!--</region> ^^^ script ^^^ -->

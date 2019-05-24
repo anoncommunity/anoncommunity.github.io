@@ -5,94 +5,38 @@ var resizeDelay;
 var coinfullname = 'zclassic';
 
 
-function frameChange(doc)
-{
-  if (!boolPinMenu)
-  {
-    closeNav();
-  }
+// function frameChange(doc)
+// {
+//   if (!boolPinMenu)
+//   {
+//     closeNav();
+//   }
 
-  if (doc != current_frame)
-  {
-    current_frame = doc;
-    $('.frame').fadeOut(300, function()
-    {
-    $('.frame').load(doc);
-    $('.frame').fadeIn(2000);
-    });
-  }
-}
+//   if (doc != current_frame)
+//   {
+//     current_frame = doc;
+//     $('.frame').fadeOut(300, function()
+//     {
+//     $('.frame').load(doc);
+//     $('.frame').fadeIn(2000);
+//     });
+//   }
+// }
 
 
-function containerClick(classId)
-{
-   if (!boolPinMenu)
-   {
-      closeNav();
-   }
-   console.log(classId);
-   $('.menurow').removeClass('active');
-   $(this).addClass('active');
-   $('.container').hide();
-   $(classId).show();
-   resizeNow();//redraw charts
-}
-
-function pinMenu()
-{
-   // console.log('pinMenu');
-   if ($(".is-menu-visible")[0])
-   {
-      boolPinMenu = !boolPinMenu;
-      if (boolPinMenu)
-      {
-         $('#btn_pin_img').attr('src', 'assets/icons/pngPinInv_32.png');
-      }
-      else
-      {
-         $('#btn_pin_img').attr('src', 'assets/icons/pngPinNorm_32.png');
-      }
-      $('#main-div').toggleClass('fix_menu');
-   }
-}
-
-function openNav()
-{
-  console.log('openNav');
-  $('body').addClass('is-menu-visible');
-  $('#main-div').removeClass('unslide');
-  $('#main-div').addClass('slide');
-  $('#chart_div').removeClass('chart_end');
-  $('#chart_div').addClass('chart_sliding');
-}
-
-function closeNav()
-{
-   if (boolPinMenu)
-   {
-      pinMenu();
-   }
-      $('#main-div').removeClass('slide');
-      $('body').removeClass('is-menu-visible');
-      $('#main-div').addClass('unslide');
-      $('#chart_div').removeClass('chart_end');
-      $('#chart_div').addClass('chart_sliding');
-      $('#menu').addClass('close');
-}
-
-function toggleNav()
-{
-
-   if ($(".is-menu-visible")[0])
-   {
-      closeNav();
-   }
-   else
-   {
-      openNav();
-   }
-//   resizeNow();
-}
+// function containerClick(classId)
+// {
+//    if (!boolPinMenu)
+//    {
+//       closeNav();
+//    }
+//    console.log(classId);
+//    $('.menurow').removeClass('active');
+//    $(this).addClass('active');
+//    $('.container').hide();
+//    $(classId).show();
+//    resizeNow();//redraw charts
+// }
 
 function setElementValue(element, value)
 {

@@ -8,39 +8,49 @@
 
 // list of startup values
 var currentFrame = ''
- var loaded = 'sections/overview-section'
+ var loaded = 'sections/info-section'
 var boolPinMenu = false
+var boolTheme = false
+var firstRun = true
 
+// the following are there to ensure that load is run only after all elements
+// are available - runs every time section is loaded
 var islJsNotLoaded = false
+var indexSectionLoaded = false
 
 $('#btn-pin').click(() => { pinMenu() })
 $('#btn-menu').click(() => { toggleNav() })
+$('#btn-theme').click(() => { selectTheme() })
 
 $(function () {
   // setTimeout(winMainCreate, 1000)
   console.log('win_main_start')
-  // $('body').addClass('is-menu-visible')
+  $('body').addClass('is-menu-visible')
   $('#menu').load('menu.html', menuLoaded)
+
+  // frameChange(loaded + '.html')
+  
+
+  // const remote = require('electron').remote
+  // const Menu = remote.Menu
+  // const MenuItem = remote.MenuItem
+  //
+  // var menu = new Menu()
+  // menu.append(new MenuItem({ label: 'MenuItem1', click: function () { console.log('item 1 clicked') } }))
+  // menu.append(new MenuItem({ type: 'separator' }))
+  // menu.append(new MenuItem({ label: 'MenuItem2', type: 'checkbox', checked: true }))
+  //
+  // window.addEventListener('contextmenu', (e) => {
+  //   if (e.target.id === 'app-icon') {
+  //     e.preventDefault()
+  //     menu.popup(remote.getCurrentWindow())
+  //   }
+  // }, false)
 })
+
 
 function menuLoaded () {
   frameChange(loaded + '.html')
-
-  const remote = require('electron').remote
-  const Menu = remote.Menu
-  const MenuItem = remote.MenuItem
-
-  var menu = new Menu()
-  menu.append(new MenuItem({ label: 'MenuItem1', click: function () { console.log('item 1 clicked') } }))
-  menu.append(new MenuItem({ type: 'separator' }))
-  menu.append(new MenuItem({ label: 'MenuItem2', type: 'checkbox', checked: true }))
-
-  window.addEventListener('contextmenu', (e) => {
-    if (e.target.id === 'app-icon') {
-      e.preventDefault()
-      menu.popup(remote.getCurrentWindow())
-    }
-  }, false)
 }
 
 function frameChange (doc) {
@@ -57,16 +67,8 @@ function frameChange (doc) {
   }
 }
 
-$('.menurow').click(function () {
-  frameChange('sections/' + this.id + '.html')
-  $('.menurow').removeClass('active')
-  $('#' + this.id).addClass('active')
+$('#top-menu').hover(function () {
 
-  if (loaded.indexOf(this.id) === -1) {
-    loaded += this.id
-
-    $.getScript('assets/js/modules/' + this.id + '.js')
-  }
 })
 
 function pinMenu () {
@@ -82,10 +84,21 @@ function pinMenu () {
   }
 }
 
+function selectTheme () {
+  boolTheme = !boolTheme
+
+  if (boolTheme) {
+    $('body').css('background-image', 'url(assets/images/back-1.jpg)')
+  } else {
+    $('body').css('background-image', 'url(assets/images/back.jpg)')
+  }
+}
+
 function openNav () {
   console.log('openNav')
   $('#btn-menu_img').attr('src', 'assets/images/menuInv.png')
   $('body').addClass('is-menu-visible')
+  $('body').addClass('is-top-menu-visible')
   $('#main-div').removeClass('unslide')
   $('#main-div').addClass('slide')
   $('#btn-menu').addClass('btn-menu-invert')
@@ -100,6 +113,12 @@ function closeNav () {
   $('#btn-menu_img').attr('src', 'assets/images/menu1.png')
   $('#main-div').removeClass('slide')
   $('body').removeClass('is-menu-visible')
+  if (!firstRun) { 
+    $('body').removeClass('is-top-menu-visible') 
+  }
+  else {
+    firstRun = false
+  }
   $('#main-div').addClass('unslide')
   $('#btn-menu').removeClass('btn-menu-invert')
   $('#chart_div').removeClass('chart_end')
@@ -107,11 +126,47 @@ function closeNav () {
   $('#menu').addClass('close')
 }
 
+function openTopbar () {
+  console.log('openNav')
+  // $('#btn-menu_img').attr('src', 'assets/images/menuInv.png')
+  $('body').addClass('is-top-menu-visible')
+  // $('#main-div').removeClass('unslide')
+  // $('#main-div').addClass('slide')
+  // $('#btn-menu').addClass('btn-menu-invert')
+  // $('#chart_div').removeClass('chart_end')
+  // $('#chart_div').addClass('chart_sliding')
+}
+
+function closeTopbar () {
+  // if (boolPinMenu) {
+  //   pinMenu()
+  // }
+  // $('#btn-menu_img').attr('src', 'assets/images/menu1.png')
+  // $('#main-div').removeClass('slide')
+  $('body').removeClass('is-top-menu-visible')
+  // $('#main-div').addClass('unslide')
+  // $('#btn-menu').removeClass('btn-menu-invert')
+  // $('#chart_div').removeClass('chart_end')
+  // $('#chart_div').addClass('chart_sliding')
+  // $('#menu').addClass('close')
+}
+
+
 function toggleNav () {
   if ($('.is-menu-visible')[0]) {
     closeNav()
   } else {
     openNav()
+  }
+//   resizeNow();
+}
+
+function toggleTopbar () {
+  console.log('toggleTopbar ()')
+  if ($('.is-top-menu-visible')[0]) {
+    closeTopbar()
+  } else {
+    openTopbar()
   }
 //   resizeNow();
 }

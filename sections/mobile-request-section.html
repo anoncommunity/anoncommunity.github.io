@@ -1,0 +1,308 @@
+<div class='html-section flx dc js'>
+
+
+  <!--<region> *** section title *** -->
+  <div>
+    <div class='flx jc ac row-1'>
+      <img class='separator' src='assets/images/logo.png'>
+      <div class='font-2'>
+        <p id='account-settings-header'>Mobile Device Request Form</p>
+      </div>
+    </div>
+  </div>
+  <!--</region> ^^^ section title ^^^ -->
+
+  <!--<region> *** section body *** -->
+  <div>
+
+    <form id='device-request-form' action='mail.php' method='POST'>
+    <div class='flx dc jc ac' style='margin:1rem;'>
+
+      <!--<region> *** user information *** -->
+      <div class='flx dc jc ac mobile-50 input-group-div'>
+
+        <!--<region> *** title *** -->
+        <div class='font-1-5 font-medium'>
+          <div style='color: rgba(0, 0, 0, 0.7);'>
+            User Information
+          </div>
+        </div>
+        <!--</region> ^^^ title ^^^ -->
+
+        <!--<region> *** hidden input *** -->
+        <!-- <input id='email' name='email' type='hidden'> -->
+        <!--</region> ^^^ hidden input ^^^ -->
+
+        <!--<region> *** name input *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='user-select' class='font-medium'>Name</label>
+          <input id='name' name='name' class='fg input-field label-value font-light' type="text">
+          <!-- <select id='user-select' class='fg select-user-list input-field label-value font-light'>
+            <option>select from list...</option>
+          </select> -->
+        </div>
+        <!--</region> ^^^ name input ^^^ -->
+
+
+        <!--<region> *** fetch users *** -->
+        <!-- <div class='mobile-90'>
+          <div id='btn-get-user-list' class='flx jc ac btn-style'>
+            <i class='icon-user'></i>
+            <span>fetch user list...</span>
+          </div>
+        </div> -->
+        <!--</region> ^^^ fetch users ^^^ -->
+
+        <!--<region> *** fetch user button *** -->
+        <div class='mobile-90'>
+          <div id='btn-get-user-data' class='flx jc ac btn-style'>
+            <i class='icon-user'></i>
+            <span>fetch user info...</span>
+          </div>
+        </div>
+        <!--</region> ^^^ fetch user button ^^^ -->
+
+        <!--<region> *** role input *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='role' class='font-medium'>Role</label>
+          <input id='role' name='role' class='fg input-field label-value font-light' type="text">
+        </div>
+        <!--</region> ^^^ role input ^^^ -->
+
+        <!--<region> *** team input *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='team' class='font-medium'>Portfolio, Department, Team</label>
+          <input id='team' name='team' class='fg input-field label-value font-light' type="text">
+        </div>
+        <!--</region> ^^^ team input ^^^ -->
+
+        <!--<region> *** employee number input *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='employee-number' class='font-medium'>Employee number</label>
+          <input id='employee-number' name='employee-number' class='fg input-field label-value font-light' type="text">
+        </div>
+        <!--</region> ^^^ employee number input ^^^ -->
+
+      </div>
+      <!--</region> ^^^ user information ^^^ -->
+
+      <!--<region> *** device information/requirements *** -->
+      <div class='flx dc jc ac mobile-50 input-group-div'>
+
+        <!--<region> *** user information title *** -->
+        <div class='font-1-5 font-medium'>
+          <div style='color: rgba(0, 0, 0, 0.7);'>
+            Device Information/Requirements
+          </div>
+        </div>
+        <!--</region> ^^^ user information title ^^^ -->
+
+        <!--<region> *** device/replacement *** -->
+        <div class='flx ja as' style='width: 100%; margin: 1rem;'>
+          <!--<region> *** device *** -->
+          <div class='flx dc js as'>
+            <div class='font-1' style='color: rgba(0, 0, 0, 0.7);'>
+              Device
+            </div>
+
+            <div class='flx js ac'>
+              <input id='device-new' type="radio" name="device" value='new'>
+              <label for='device-new' class='font-medium'>New</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='device-upgrade' type="radio" name="device" value='upgrade'>
+              <label for='device-upgrade' class='font-medium'>Upgrade</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='device-replacement' type='radio' name='device' value='replacement'>
+              <label for='device-replacement' class='font-medium'>Replacement</label>
+            </div>
+
+          </div>
+          <!--</region> ^^^ device ^^^ -->
+
+          <!--<region> *** replacement *** -->
+          <div class='flx dc js as'>
+            <div class='font-1' style='color: rgba(0, 0, 0, 0.7);'>
+              Reason for replacement
+            </div>
+
+            <div class='flx js ac'>
+              <input id='device-damaged' type="radio" name="replacement" value='damaged'>
+              <label for='device-damaged' class='font-medium'>Damaged</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='device-lost' type="radio" name="replacement" value='lost'>
+              <label for='device-lost' class='font-medium'>Lost</label>
+            </div>
+          </div>
+          <!--</region> ^^^ replacement ^^^ -->
+        </div>
+        <!--</region> ^^^ device/replacement ^^^ -->
+
+        <!--<region> *** transfer from *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='transfer-from' class='font-medium'>Transfer from</label>
+          <input id='transfer-from' name='transfer-from' class='fg input-field label-value font-light' type="text">
+        </div>
+        <!--</region> ^^^ transfer from ^^^ -->
+
+        <!--<region> *** transfer to *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='transfer-to' class='font-medium'>Transfer to</label>
+          <input id='transfer-to' name='transfer-to' class='fg input-field label-value font-light' type="text">
+        </div>
+        <!--</region> ^^^ transfer to ^^^ -->
+
+        <!--<region> *** serial number *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='serial-number' class='font-medium'>Device serial number (not required for new device)</label>
+          <input id='serial-number' name='serial-number' class='fg input-field label-value font-light' type="text">
+        </div>
+        <!--</region> ^^^ serial number ^^^ -->
+
+        <!--<region> *** mobile number *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='mobile-number' class='font-medium'>Mobile number (for phones only, not required for new device)</label>
+          <input id='mobile-number' name='mobile-number' class='fg input-field label-value font-light' type="text">
+        </div>
+        <!--</region> ^^^ mobile number ^^^ -->
+
+      </div>
+      <!--</region> ^^^ device information/requirements ^^^ -->
+
+      <!--<region> *** device type *** -->
+      <div class='flx dc jc ac mobile-50 input-group-div'>
+
+        <!--<region> *** user information title *** -->
+        <div class='font-1-5 font-medium'>
+          <div style='color: rgba(0, 0, 0, 0.7);'>
+            Device Type
+          </div>
+        </div>
+        <!--</region> ^^^ user information title ^^^ -->
+
+        <!--<region> *** usage *** -->
+        <div class='flx ja as' style='width: 100%'>
+          <div class='flx dc js as' style='margin: 1rem;'>
+
+            <div class='flx js ac'>
+              <input id='android-phone' name='android-phone' type='checkbox'>
+              <label for='android-phone' class='font-medium'>Android phone</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='iphone' name='iphone' type='checkbox'>
+              <label for='iphone' class='font-medium'>iPhone</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='ipad' name='ipad' type='checkbox'>
+              <label for='ipad' class='font-medium'>iPad</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='ipad-sim' name='ipad-sim' type='checkbox'>
+              <label for='ipad-sim' class='font-medium'>iPad only (with SIM)*</label>
+            </div>
+
+          </div>
+        </div>
+        <!--</region> ^^^ usage ^^^ -->
+
+        <!--<region> *** note *** -->
+        <div class='flx dc js as mobile-90 font-medium'>
+          *Note, this is only available if you do not have a SEPA phone.
+        </div>
+        <!--</region> ^^^ note ^^^ -->
+
+      </div>
+      <!--</region> ^^^ device type ^^^ -->
+
+      <!--<region> *** justification *** -->
+      <div class='flx dc jc ac mobile-50 input-group-div'>
+
+        <!--<region> *** title *** -->
+        <div class='font-1-5 font-medium'>
+          <div style='color: rgba(0, 0, 0, 0.7);'>
+            Justification
+          </div>
+        </div>
+        <!--</region> ^^^ title ^^^ -->
+
+        <!--<region> *** usage *** -->
+        <div class='flx ja as' style='width: 100%; margin: 1rem;'>
+          <div class='flx dc js as'>
+
+            <div class='flx js ac'>
+              <input id='just-field-staff' name='reason' type='radio' value='field-staff'>
+              <label for='just-field-staff' class='font-medium'>Field staff (Android only)</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='just-duty-rota' name='reason' type='radio' value='duty-rota'>
+              <label for='just-duty-rota' class='font-medium'>Duty rota</label>
+            </div>
+
+            <div class='flx js ac'>
+              <input id='just-other' name='reason' type='radio' value='other'>
+              <label for='just-other' class='font-medium'>Other</label>
+            </div>
+
+          </div>
+        </div>
+        <!--</region> ^^^ usage ^^^ -->
+
+        <!--<region> *** other *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='device-other' class='font-medium'>Other: Provide a brief description</label>
+          <input id='device-other' name='device-other' type='text' class='fg input-field label-value font-light'>
+        </div>
+        <!--</region> ^^^ other ^^^ -->
+
+        <!--<region> *** details *** -->
+        <div class='flx dc js as mobile-90'>
+          <label for='device-use' class='font-medium'>Please give details of what you would like to use this device for</label>
+          <input id='device-use' name='device-use' type='text' class='fg input-field label-value font-light'>
+        </div>
+        <!--</region> ^^^ details ^^^ -->
+
+        <!--<region> *** outside UK *** -->
+        <div class='flx js ac mobile-90'>
+          <label for='android-phone' class='font-medium'>Device is required for use outwith the UK</label>
+          <input id='android-phone' name='android-phone' type='checkbox'>
+        </div>
+        <!--</region> ^^^ outside UK ^^^ -->
+
+      </div>
+      <!--</region> ^^^ justification ^^^ -->
+
+      <!--<region> *** buttons *** -->
+      <div class='flx dc jc ac mobile-50 input-group-div'>
+
+        <!--<region> *** submit *** -->
+        <div class='mobile-90'>
+          <div id='btn-submit' class='flx jc ac btn-style'>
+            <i class='icon-paper-plane-3'></i>
+            <span>submit</span>
+          </div>
+        </div>
+        <!--</region> ^^^ submit ^^^ -->
+
+      </div>
+      <!--</region> ^^^ buttons ^^^ -->
+    </div>
+    </form>
+  </div>
+  <!--</region> ^^^ section body ^^^ -->
+
+</div>
+
+<!--<region> *** script *** -->
+<script>
+    mobileRequestSectionLoad();
+</script>
+<!--</region> ^^^ script ^^^ -->

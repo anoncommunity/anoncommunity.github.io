@@ -2,7 +2,7 @@
 
 var boolPinMenu = false;
 var resizeDelay;
-var coinfullname = 'zclassic';
+var coinfullname = 'anon';
 
 
 // function frameChange(doc)

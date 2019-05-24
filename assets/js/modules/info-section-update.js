@@ -6,7 +6,7 @@
 
 console.log('last_update.js')
 
-var coinfullname = 'zclassic'
+var coinfullname = 'anon'
 
 infoSection.last_update =
 {

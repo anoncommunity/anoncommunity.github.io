@@ -1,60 +1,4 @@
-@font-face {
-  font-family: 'zclassic';
-  src: url('../font/zclassic.eot?1008463');
-  src: url('../font/zclassic.eot?1008463#iefix') format('embedded-opentype'),
-       url('../font/zclassic.woff2?1008463') format('woff2'),
-       url('../font/zclassic.woff?1008463') format('woff'),
-       url('../font/zclassic.ttf?1008463') format('truetype'),
-       url('../font/zclassic.svg?1008463#zclassic') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'zclassic';
-    src: url('../font/zclassic.svg?1008463#zclassic') format('svg');
-  }
-}
-*/
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "zclassic";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
- 
+
 .icon-users:before { content: '\e800'; } /* '' */
 .icon-user:before { content: '\e801'; } /* '' */
 .icon-wrench:before { content: '\e802'; } /* '' */
@@ -112,10 +56,25 @@
 .icon-right-circle:before { content: '\e836'; } /* '' */
 .icon-play-2:before { content: '\e837'; } /* '' */
 .icon-play-circled2-1:before { content: '\e838'; } /* '' */
+.icon-heart:before { content: '\e839'; } /* '' */
+.icon-heart-empty:before { content: '\e83a'; } /* '' */
+.icon-info:before { content: '\e83b'; } /* '' */
+.icon-info-circled:before { content: '\e83c'; } /* '' */
+.icon-flashlight:before { content: '\e83d'; } /* '' */
+.icon-tools:before { content: '\e83e'; } /* '' */
+.icon-globe:before { content: '\e83f'; } /* '' */
+.icon-info-1:before { content: '\e840'; } /* '' */
+.icon-key:before { content: '\e841'; } /* '' */
+.icon-key-inv:before { content: '\e842'; } /* '' */
+.icon-wrench-2:before { content: '\e843'; } /* '' */
+.icon-pitch:before { content: '\e844'; } /* '' */
+.icon-key-1:before { content: '\e845'; } /* '' */
+.icon-229837:before { content: '\e846'; } /* '' */
 .icon-right-open-1:before { content: '\f006'; } /* '' */
 .icon-menu-1:before { content: '\f008'; } /* '' */
 .icon-play:before { content: '\f00f'; } /* '' */
 .icon-paper-plane-3:before { content: '\f01d'; } /* '' */
+.icon-hash:before { content: '\f029'; } /* '' */
 .icon-users-2:before { content: '\f064'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
@@ -132,12 +91,15 @@
 .icon-bitcoin:before { content: '\f15a'; } /* '' */
 .icon-reddit:before { content: '\f1a1'; } /* '' */
 .icon-reddit-squared:before { content: '\f1a2'; } /* '' */
+.icon-cube:before { content: '\f1b2'; } /* '' */
+.icon-cubes:before { content: '\f1b3'; } /* '' */
 .icon-database:before { content: '\f1c0'; } /* '' */
 .icon-paper-plane:before { content: '\f1d8'; } /* '' */
 .icon-sliders:before { content: '\f1de'; } /* '' */
 .icon-chart-area:before { content: '\f1fe'; } /* '' */
 .icon-chart-pie:before { content: '\f200'; } /* '' */
 .icon-chart-line:before { content: '\f201'; } /* '' */
+.icon-diamond:before { content: '\f219'; } /* '' */
 .icon-facebook-official:before { content: '\f230'; } /* '' */
 .icon-server:before { content: '\f233'; } /* '' */
 .icon-medium:before { content: '\f23a'; } /* '' */

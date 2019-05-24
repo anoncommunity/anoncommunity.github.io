@@ -6,9 +6,27 @@
 // global.electron = require('electron');
 // electron.webFrame.setZoomFactor(1.0);
 
+// Assuming "?post=1234&action=edit"
+
+var urlParams = new URLSearchParams(window.location.search);
+
+var section = urlParams.get('section') // "edit"
+
+console.log(section)
+
+
+//console.log(urlParams.has('post')); // true
+//console.log(urlParams.get('action')); // "edit"
+//console.log(urlParams.getAll('action')); // ["edit"]
+//console.log(urlParams.toString()); // "?post=1234&action=edit"
+//console.log(urlParams.append('active', '1')); // "?post=1234&action=edit&active=1"
+
 // list of startup values
 var currentFrame = ''
- var loaded = 'sections/info-section'
+var loaded = 'sections/info-section'
+if (section != null) {
+  loaded = 'sections/' + section
+}
 var boolPinMenu = false
 var boolTheme = false
 var firstRun = true
@@ -27,27 +45,7 @@ $(function () {
   console.log('win_main_start')
   $('body').addClass('is-menu-visible')
   $('#menu').load('menu.html', menuLoaded)
-
-  // frameChange(loaded + '.html')
-  
-
-  // const remote = require('electron').remote
-  // const Menu = remote.Menu
-  // const MenuItem = remote.MenuItem
-  //
-  // var menu = new Menu()
-  // menu.append(new MenuItem({ label: 'MenuItem1', click: function () { console.log('item 1 clicked') } }))
-  // menu.append(new MenuItem({ type: 'separator' }))
-  // menu.append(new MenuItem({ label: 'MenuItem2', type: 'checkbox', checked: true }))
-  //
-  // window.addEventListener('contextmenu', (e) => {
-  //   if (e.target.id === 'app-icon') {
-  //     e.preventDefault()
-  //     menu.popup(remote.getCurrentWindow())
-  //   }
-  // }, false)
 })
-
 
 function menuLoaded () {
   frameChange(loaded + '.html')

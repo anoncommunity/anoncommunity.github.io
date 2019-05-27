@@ -6,9 +6,18 @@
 // global.electron = require('electron');
 // electron.webFrame.setZoomFactor(1.0);
 
+var urlParams = new URLSearchParams(window.location.search);
+
+var section = urlParams.get('section') // "edit"
+
+
 // list of startup values
 var currentFrame = ''
- var loaded = 'sections/info-section'
+var loaded = 'sections/info-section'
+if (section != null) {
+  loaded = 'sections/' + section
+}
+
 var boolPinMenu = false
 var boolTheme = false
 var firstRun = true
@@ -28,8 +37,9 @@ $(function () {
   $('body').addClass('is-menu-visible')
   $('#menu').load('menu.html', menuLoaded)
 
-  // frameChange(loaded + '.html')
+  frameChange(loaded + '.html')
   
+  $.getScript('assets/js/modules/' + section + '.js')
 
   // const remote = require('electron').remote
   // const Menu = remote.Menu

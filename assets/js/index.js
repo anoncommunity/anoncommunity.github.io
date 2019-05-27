@@ -39,7 +39,7 @@ $(function () {
 
   frameChange(loaded + '.html')
   
-  $.getScript('assets/js/modules/' + section + '.js')
+  // $.getScript('assets/js/modules/' + section + '.js')
 
   // const remote = require('electron').remote
   // const Menu = remote.Menu

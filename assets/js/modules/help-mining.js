@@ -7,7 +7,7 @@
 
 console.log('help-mining.js')
 
-//helpMiningLoad ()
+helpMiningLoad ()
 
 // load required scripts
 

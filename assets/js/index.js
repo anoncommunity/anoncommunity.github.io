@@ -13,10 +13,10 @@
 
 // list of startup values
 var currentFrame = ''
-var loaded = 'sections/info-section'
-if (section != null) {
-  loaded = 'sections/' + section
-}
+// var loaded = 'sections/info-section'
+// if (section != null) {
+//   loaded = 'sections/' + section
+// }
 
 var boolPinMenu = false
 var boolTheme = false

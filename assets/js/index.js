@@ -6,9 +6,9 @@
 // global.electron = require('electron');
 // electron.webFrame.setZoomFactor(1.0);
 
-var urlParams = new URLSearchParams(window.location.search);
+// var urlParams = new URLSearchParams(window.location.search);
 
-var section = urlParams.get('section') // "edit"
+// var section = urlParams.get('section') // "edit"
 
 
 // list of startup values

@@ -7,7 +7,7 @@
 
 console.log('help-mining.js')
 
-var settingsSection = {}
+helpMiningLoad ()
 
 // load required scripts
 

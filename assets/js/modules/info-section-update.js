@@ -26,12 +26,12 @@ infoSection.last_update =
 
 function getLastUpdate () {
   // console.log('getLastUpdate')
-  $.get('https://api.oinmarketcap.com/v1/ticker/bitcoin/').then(response => {
+  $.get('https://api.coinmarketcap.com/v1/ticker/bitcoin/').then(response => {
     var btcUsd1h = previousPrice(parseFloat(response[0].price_usd), parseFloat(response[0].percent_change_1h))
     var btcUsd24h = previousPrice(parseFloat(response[0].price_usd), parseFloat(response[0].percent_change_24h))
     var btcUsd7d = previousPrice(parseFloat(response[0].price_usd), parseFloat(response[0].percent_change_7d))
 
-    $.get('https://api.oinmarketcap.com/v1/ticker/' + coinfullname + '/').then(response => {
+    $.get('https://api.coinmarketcap.com/v1/ticker/' + coinfullname + '/').then(response => {
       console.log('*** coinmarketcap response ***')
       calculatePercent(
         '1h',

@@ -1,12 +1,16 @@
 <div class='html-section flx dc js'>
 
-  <!--<region> *** separator *** -->
-  <div>
-    <div class='flx jc row-2'>
+  <!--#region *** section title *** -->
+  <div class='row-1'>
+    <div class='flx jc ac'>
       <img class='separator' src='assets/images/logo.png'>
+      <div class='font-2'>
+        <p id='account-settings-header'>Mining Help</p>
+      </div>
     </div>
+    <!-- <hr style="border:0.5px solid rgba(0, 0, 0, 0.2); width: 90%;"> -->
   </div>
-  <!--</region> ^^^ separator ^^^ -->
+  <!--#endregion ^^^ section title ^^^ -->
 
   <!--<region> *** row - with infopanels *** -->
   <div> <!-- required to stop flex container collisions -->
@@ -34,6 +38,33 @@
       <!--</region> ^^^ last update ^^^ -->
 
       <!--<region> *** h and v dividers *** -->
+        <div class='flx jc ac small_screen_hide'>
+          <div class='vl light'></div>
+        </div>
+  
+        <div class='small_screen_show display_none hl light'></div>
+        <!--</region> ^^^ h and v dividers ^^^ -->
+  
+        <!--<region> *** blockheight *** -->
+        <div class='flx dc jc ac infopanel-wide font-normal'>
+          <div class='flx js ac'>
+            <i class='icon-user' style='opacity: 0.7;'></i>
+            <p>blockheight</p>
+          </div>
+          <div class=''>
+            <p id='blockheight' class='font-2'>
+              value
+            </p>
+          </div>
+          <div class='infobar_footer'>
+            <p id='new-calls-week'>
+              blocks
+            </p>
+          </div>
+        </div>
+        <!--</region> ^^^ blockheight ^^^ -->
+
+        <!--<region> *** h and v dividers *** -->
       <div class='flx jc ac small_screen_hide'>
         <div class='vl light'></div>
       </div>
@@ -48,13 +79,13 @@
           <p>difficulty</p>
         </div>
         <div class=''>
-          <p id='active-users' class='font-2'>
+          <p id='difficulty' class='font-2'>
             value
           </p>
         </div>
         <div class='infobar_footer'>
           <p id='registered-users'>
-            footer
+            &nbsp;
           </p>
         </div>
       </div>
@@ -75,72 +106,17 @@
           <p>net hashrate</p>
         </div>
         <div class=''>
-          <p id='outbound-queue-current' class='font-2'>
+          <p id='net-hashrate' class='font-2'>
             value
           </p>
         </div>
         <div class='infobar_footer'>
           <p id='outbound-queue-today'>
-            footer
+            H/s
           </p>
         </div>
       </div>
       <!--</region> ^^^ outbound queue ^^^ -->
-
-      <!--<region> *** h and v dividers *** -->
-      <div class='flx jc ac small_screen_hide'>
-        <div class='vl light'></div>
-      </div>
-
-      <div class='small_screen_show display_none hl light'></div>
-      <!--</region> ^^^ h and v dividers ^^^ -->
-
-      <!--<region> *** new calls *** -->
-      <div class='flx dc jc ac infopanel-wide font-normal'>
-        <div class='flx js ac'>
-          <i class='icon-user' style='opacity: 0.7;'></i>
-          <p>blockheight</p>
-        </div>
-        <div class=''>
-          <p id='new-calls-today' class='font-2'>
-            value
-          </p>
-        </div>
-        <div class='infobar_footer'>
-          <p id='new-calls-week'>
-            footer
-          </p>
-        </div>
-      </div>
-      <!--</region> ^^^ new calls ^^^ -->
-
-      <!--<region> *** h and v dividers *** -->
-      <div class='flx jc ac small_screen_hide'>
-        <div class='vl light'></div>
-      </div>
-
-      <div class='small_screen_show display_none hl light'></div>
-      <!--</region> ^^^ h and v dividers ^^^ -->
-
-      <!--<region> *** survey response *** -->
-      <div class='flx dc jc ac infopanel-wide font-normal'>
-        <div class='flx js ac'>
-          <i class='icon-user' style='opacity: 0.7;'></i>
-          <p>last block found</p>
-        </div>
-        <div class=''>
-          <p id='survey-response-recent' class='font-2'>
-            value
-          </p>
-        </div>
-        <div class='infobar_footer'>
-          <p id='survey-response-week'>
-            footer
-          </p>
-        </div>
-      </div>
-      <!--</region> ^^^ survey response ^^^ -->
-
 
     </div>
     <!--</region> ^^^ row flex container ^^^ -->
@@ -148,102 +124,227 @@
   </div>
   <!--</region> ^^^ row - with infopanels ^^^ -->
 
-
-  <!--<region> *** row - chart and chart tooltips *** -->
+  <!--#region *** row - 1 *** -->
   <div> <!-- required to stop flex container collisions -->
 
-    <!--<region> *** row flex container *** -->
-    <div class='flx ja ww row-1' style='flex-grow: 1;'>
+    <!--#region *** container - row - 1 *** -->
+    <div class='flx as clear-height row-1' style='margin-top: 20px;'>
 
-      <!--<region> *** column *** -->
-      <div class='flx dc js ac infopanel-wide'>
+      <!--#region *** container - row - 1 *** -->
+      <div class='flx100h dc ja as' style='margin-top: 20px;'>
 
-        <!--<region> *** daily stats heading *** -->
-        <div class='flx js ac'>
-          <i class='icon-mail main-font-dark'></i>
-          <p>queued mail</p>
+        <div class='flx jb ac infopanel-wide'>
+          <div class='flx dc js ac infopanel-wide'>
+            <i class="font-2 icon-229837"></i>
+            <p class='font-1-5'>
+              What is mining?
+            </p>
+            <div class='flx ja ac infopanel-wide'>
+              <p style='margin:20px; text-align: justify;'>
+                'Crypto' is designed to be decentralized, secure and unalterable; and every cryptocurrency transaction is encrypted. These transaction records are then added to a 'block' until a set number of transactions has been made. That block, in turn, then gets added to the public blockchain.
+                
+                Because these blocks are encrypted, they are like complicated math puzzles that only powerful computer hardware can solve. The process of solving these puzzles on these blocks and adding them to the public blockchain is basically what mining is.
+                
+                Miners verify the transactions. The reward for doing this is payment in that particular block's coin, in this case ANON. The payment is based on how much their hardware contributed to solving that puzzle.
+              </p>
+             </div>
+          </div>
         </div>
-        <!--</region> ^^^ daily stats heading ^^^ -->
 
-        <div id='chart_div' class='chart_end' style='width:100%;flex-grow:1'></div>
+        <div class='flx jb ac infopanel-wide'>
+          <div class='flx dc js ac infopanel-wide'>
+            <i class="font-2 icon-229837"></i>
+            <p class='font-1-5'>
+              What do you need?
+            </p>
+            <div class='flx ja ac infopanel-wide'>
+              <p style='margin:20px; text-align: justify;'>
+                The elements that go into ANON mining on your computer involve wallets, hardware
+                such as CPU's and GPU's, software, and a mining pool. You'll download the software
+                you need to mine ANON and edit an executable text file with details like the
+                mining pool's URL to connect to, your wallet address and the name of your "worker"
+                or PC. Once the blocks are solved and coins are generated, the pool automatically
+                pays you directly to your wallet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='flx jb ac infopanel-wide'>
+          <div class='flx dc js ac infopanel-wide'>
+            <p class='font-1-5'>
+              Wallet
+            </p>
+            <div class='flx ja ac infopanel-wide'>
+              <p style='margin:20px; text-align: justify;'>
+                Get the ANON wallet from <a href=
+                'https://github.com/anonymousbitcoin/anon-full-node-wallet/releases'>here</a>
+                or get paid into your ZelCore wallet (mobile app also available from app store).
+
+                You can use one of the guides made by the community to build your ANON wallet if
+                you need a hand – or simply install the ZelCore wallet. Use this wallet to
+                obtain an address to have your mining rewards sent to.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='flx jb ac'>
+          <div class='flx dc js ac infopanel-wide'>
+            <p class='font-1-5'>
+              Hardware
+            </p>
+            <div class='flx ja ac infopanel-wide'>
+              <p style='margin:20px; text-align: justify;'>
+                At minimum a computer with a 1050 ti graphics card. Make sure all your windows
+                updates have been applied. Make sure your video (graphics) card drivers are
+                all up to date. Be aware that antivirus programs may intefere with mining
+                performance, so consider disabling these if you are confident you know what
+                you are doing. Make sure your power management is set so that your computer
+                doesnt power down during mining.
+              </p>
+            </div>
+          </div>
+        </div>  
+
+        <div class='flx jb ac infopanel-wide'>
+          <div class='flx dc js ac infopanel-wide'>
+            <p class='font-1-5'>
+              Software
+            </p>
+            <p style='margin:20px; text-align: justify;'>
+              'EWBF's Cuda Equihash Miner 0.6' is recommended. You will find the download source
+              links if you scroll down a little. Download, unzip, and install the software.
+            </p>
+              <div class='flx dc js ac' style='margin-bottom: 20px;'>
+                <p>Performance Guide</p>
+                <code>
+                  <p>1050ti ~18 S/s;</p>
+                  <p>1060 ~30 S/s;</p>
+                  <p>1070 ~45 S/s;</p>
+                  <p>1080 ~50 S/s;</p>
+                  <p>1080ti ~75 S/s.</p>
+                </code>
+              </div>
+              <div class='flx dc js ac' style='margin-bottom: 20px;'>
+                <p>Configuration:</p>
+                <code>
+                  <p>Miner Algo – 144_5;</p>
+                  <p>Miner Pers – AnonyPoW;</p>
+                  <p>Server (example) – stratum+tcp://cryptoblock.uk;</p>
+                  <p>Port (example)- 2055;</p>
+                  <p>User - *yourwalletaddress;</p>
+                  <p>Workername – *whatyouwanttocallyourrig;</p>
+                  <p>Pass - *yourpassword.</p>
+                </code>
+              </div>
+            <p>
+              Example connect string:
+            </p>  
+            <code style='margin-bottom: 20px;'>
+              <p>
+                --miner algo 144_5 --pers AnonyPoW --server stratum+tcp://cryptoblock.uk
+                --port 2055 --user AnXjLP2Q7H9rzWWaXT1rSqWg7cyAbvA8pKK .WORKERNAME --pass x
+              </p>
+            </code>
+          </div>
+        </div>
+
+        <div class='flx100w jb ac'>
+          <div class='flx dc js ac'>
+            <p class='font-1-5'>
+              Mining Pool
+            </p>
+            <div class='flx ja ac'>
+              <p style='margin:20px; text-align: justify;'>
+                Crypto is designed to be decentralized, secure and unalterable.
+
+                Please DO NOT join a pool with the majority of the hash!
+                
+                You can check the hashrate here https://miningpoolstats.stream/anonymous and if a pool has
+                over 40%, please consider joining another pool.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='flx100w jb ac'>
+          <div class='flx100w dc js ac'>
+            <i class="font-2 icon-229837"></i>
+            <p class='font-1-5'>
+              Checklist
+            </p>
+            <div class='flx dc js ac' style='border: 2px solid#333; border-radius:10px; margin-bottom: 20px;'>
+              <p>A wallet to store your ANON;</p>
+              <p>free mining software package;</p>
+              <p>membership in an online mining pool;
+              <p>full-time internet connection (2 megabits per second or faster);</p>
+              <p>hardware setup location;</p>
+              <p>desktop computer designed for mining with powerful processor;</p>
+              <p>a house fan for cool air across your computer (you will need to cool your computer!)</p>
+              <p>REMEMBER: Crypto is designed to be decentralized, secure and unalterable. Please DO NOT join a pool with the majority of the hash!</p>
+            </div>
+          </div>
+        </div>
+  
+
+
 
       </div>
-      <!--</region> *** column *** -->
+      <!--#endregion ^^^ container - row - 1 ^^^ -->
+    </div>
+    <!--#endregion ^^^ container - row - 1 ^^^ -->
+  </div>
+  <!--#endregion ^^^ row - 1 ^^^ -->
 
-      <!--<region> *** column *** -->
-      <div class='flx dc jc ac infopanel-wide' style='width: 200px;flex-grow:0;'>
+  <!--#region *** row - 2 *** -->
+  <div> <!-- required to stop flex container collisions -->
+    <!--#region *** container - row - 2 *** -->
+    <div class='flx as clear-height row-2'>
 
-        <!--<region> *** daily stats heading *** -->
-        <div class='flx js ac'>
-          <i class='icon-chart-line main-font-dark'></i>
-          <p>daily stats</p>
-        </div>
-        <!--</region> ^^^ daily stats heading ^^^ -->
+      <!--#region *** container - row - 2 *** -->
+      <div class='flx100h dc jc ac' style='flex-grow: 1; padding: 20px;'>
 
-        <!--<region> *** daily stats subheading *** -->
-        <div class='flx dc ja ac' style='padding-top: 0.5rem;'>
-          <div class='flx js'>
-            <div style='font-size: 0.8rem;'>(hover over candle for detail)</div>
-          </div>
-        </div>
-        <!--</region> ^^^ daily stats subheading ^^^ -->
-
-        <!--<region> *** info panel values *** -->
-        <div class='flx dc jb' style='width: 200px;flex-grow:0;'>
-
-          <!--<region> *** h and v dividers *** -->
-          <div class='flx jc' style='padding: 0 2rem;'>
-            <div id='date' class='daily-stats-value'></div>
-          </div><br>
-          <!--</region> ^^^ h and v dividers ^^^ -->
-
-          <!--<region> *** open *** -->
-          <div class='flx jb' style='padding: 0 2rem;'>
-            <div>open :</div>
-            <div id='open' class='daily-stats-value'></div>
-          </div>
-          <!--</region> ^^^ open ^^^ -->
-
-          <!--<region> *** close *** -->
-          <div class='flx jb' style='padding: 0 2rem;'>
-            <div>close :</div>
-            <div id='close' class='daily-stats-value'></div>
-          </div>
-          <!--</region> ^^^ close ^^^ -->
-
-          <!--<region> *** high *** -->
-          <div class='flx jb' style='padding: 0 2rem;'>
-            <div>high :</div>
-            <div id='high' class='daily-stats-value'></div>
-          </div>
-          <!--</region> ^^^ high ^^^ -->
-
-          <!--<region> *** low *** -->
-          <div class='flx jb' style='padding: 0 2rem;'>
-            <div>low :</div>
-            <div id='low' class='daily-stats-value'></div>
-          </div>
-          <!--</region> ^^^ low ^^^ -->
-
-        </div>
-        <!--</region> ^^^ info panel values ^^^ -->
+        <!--#region *** 3-columns *** -->
+        <p class='flx100w ja ac ww'>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-globe infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-paper-plane-1 infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-medium infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-twitter infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-facebook-rect infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-github-1 infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-reddit-alien infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-mail-1 infopanel-wide'></i>
+          </a>
+          <a href='https://anoncrypto.io' target='_blank'>
+            <i class='font-2 icon-drawing infopanel-wide'></i>
+          </a>
+        </p>
+        <!--#endregion ^^^ 3-columns ^^^ -->
 
       </div>
-      <!--</region> *** column *** -->
+      <!--#endregion *** container - row - 2 *** -->
 
     </div>
-    <!--</region> ^^^ row flex container ^^^ -->
+    <!--#endregion ^^^ container - row - 2 ^^^ -->
 
   </div>
-  <!--</region> ^^^ row - chart and chart tooltips ^^^ -->
-
-  <!--<region> *** separator *** -->
-  <div>
-    <div class='flx jc row-2'>
-      <img class='separator' src='assets/images/logo.png'>
-    </div>
-  </div>
-  <!--</region> ^^^ separator ^^^ -->
+  <!--#endregion ^^^ row - 2 ^^^ -->
 
 </div>
 

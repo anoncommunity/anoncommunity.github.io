@@ -13,7 +13,7 @@
 
 // list of startup values
 var currentFrame = ''
-var loaded = 'sections/help-mining'
+var loaded = 'sections/wallet-test'
 // if (section != null) {
 //   loaded = 'sections/' + section
 // }

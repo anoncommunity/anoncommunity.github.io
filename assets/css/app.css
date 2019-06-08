@@ -479,6 +479,19 @@ height: 100%;
   /* box-shadow-left: 0 0 10px 5px rgba(0, 0, 0, 0.5); */
 }
 
+.image {
+  object-fit: contain;
+  /* margin-right: 0.5rem; */
+  height: auto;
+  padding: 15px;
+  /* margin: 30px 0 0 0; */
+  width:40%;
+  /* background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 8px 10px gray,
+          -10px 8px 15px gray, 10px 8px 15px gray; */
+  /* box-shadow-left: 0 0 10px 5px rgba(0, 0, 0, 0.5); */
+}
+
 
 .label-value
 {
@@ -686,7 +699,7 @@ margin-right: 1rem;
 
 .row-2 .infopanel-wide {
   /* padding: 1rem; */
-  /* width:50px; */
+  width:50px;
 }
 
 

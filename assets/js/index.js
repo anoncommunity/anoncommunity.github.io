@@ -13,7 +13,7 @@ var section = urlParams.get('section') // "edit"
 
 // list of startup values
 var currentFrame = ''
-var loaded = 'sections/wallet-test'
+var loaded = 'sections/help-mining'
 if (section != null) {
   loaded = 'sections/' + section
 }
